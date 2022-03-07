@@ -222,6 +222,10 @@ button {
 
 /* ========== MAIN ========== */
 /* HOME */
+.home {
+  overflow: hidden;
+}
+
 .home__media {
   position: absolute;
   top: 50%;
@@ -335,6 +339,7 @@ button {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 .technical__container {
@@ -374,6 +379,7 @@ button {
 /* Feature */
 .feature {
   margin-bottom: var(--mb-2-5);
+  overflow: hidden;
 }
 
 .feature__container {
@@ -450,6 +456,7 @@ button {
 /* AWARDS */
 .awards {
   margin-bottom: var(--mb-2-5);
+  overflow: hidden;
 }
 
 .awards__list {
@@ -509,6 +516,7 @@ button {
   grid-template-columns: repeat(3, 1fr);
   gap: 0.5rem;
   padding-bottom: var(--mb-2-5);
+  overflow: hidden;
 }
 
 .partnership__title {
@@ -524,6 +532,7 @@ button {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 .footer__container {

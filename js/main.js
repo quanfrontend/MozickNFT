@@ -52,9 +52,7 @@ const sr = ScrollReveal({
   // reset: true
 });
 
-// sr.reveal(`.home__img, .new__container, .footer__container`);
 sr.reveal(`.home__data, .award__title, .footer__sub`, { delay: 500 });
-// sr.reveal(`.giving__content, .gift__card`, { interval: 100 });
 sr.reveal(
   `.platform__title, .platform__item:nth-child(1), .platform__item:nth-child(3), .technical__title, .technical__item:nth-child(1), .technical__item:nth-child(3), .feature__left, .partnership__title`,
   {
