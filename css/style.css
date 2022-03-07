@@ -687,6 +687,14 @@ button {
     margin-right: auto;
   }
 
+  .home__title {
+    font-size: 4rem;
+  }
+
+  .home__img {
+    top: 75%;
+  }
+
   .platform__container {
     padding: 2rem 0;
   }

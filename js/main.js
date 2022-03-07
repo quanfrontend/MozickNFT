@@ -44,3 +44,19 @@ function scrollUp() {
 window.addEventListener("scroll", scrollUp);
 
 // ========== SCROLL REVEAL ==========
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "60px",
+  duration: 2500,
+  delay: 400,
+  // reset: true
+});
+
+// sr.reveal(`.home__title`);
+// sr.reveal(`.home__title, .new__container, .footer__container`);
+// sr.reveal(`.home__data`, { delay: 500 });
+// sr.reveal(`.giving__content, .gift__card`, { interval: 100 });
+// sr.reveal(`.celebrate__data, .message__form, .footer__img1`, {
+//   origin: "left",
+// });
+// sr.reveal(`.celebrate__img, .message__img, .footer__img2`, { origin: "right" });
