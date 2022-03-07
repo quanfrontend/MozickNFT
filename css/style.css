@@ -549,6 +549,7 @@ button {
 
 .footer__email-input {
   font-size: var(--h2-font-size);
+  color: var(--text-color);
   padding: 0.8rem 1rem;
   background: transparent;
   outline: none;
@@ -669,8 +670,9 @@ button {
 
   .language a {
     display: block;
-    padding: 0.3rem 0.8rem;
+    padding: 0.3rem 1rem;
     border-radius: 1.5rem;
+    font-size: var(--h3-font-size);
   }
 
   .language:hover a {
@@ -679,3 +681,56 @@ button {
 }
 
 /* ========== FOR LARGE DEVICES min 992px ========== */
+@media screen and (min-width: 992px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .platform__container {
+    padding: 2rem 0;
+  }
+
+  .platform {
+    padding: 0;
+  }
+
+  .platform__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .platform__item {
+    margin-bottom: 0;
+  }
+
+  .technical__list {
+    width: 50%;
+  }
+
+  .feature__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+
+  .feature__left {
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .feature__left-img {
+    margin-bottom: 3rem;
+  }
+
+  .awards__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .partnership__list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
