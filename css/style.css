@@ -481,7 +481,7 @@ button {
 }
 
 .awards__desc {
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 1rem;
   background-color: var(--body-color);
   border-radius: 0.5rem;
   font-family: var(--desc-font);
@@ -582,11 +582,11 @@ button {
   position: relative;
 }
 
-.footer__item:nth-child(1),
+/* .footer__item:nth-child(1),
 .footer__item:nth-child(4),
 .footer__item:nth-child(7) {
   margin-left: 0;
-}
+} */
 
 .footer__item:hover {
   transform: scale(1.1);
@@ -642,23 +642,40 @@ button {
 }
 
 /* ========== FOR MEDIUM DEVICES min 576px ========== */
-@media screen and (max-width: 576px) {
-  .footer__item:nth-child(4),
-  .footer__item:nth-child(7) {
-    margin-left: 1rem;
-  }
-
-  .footer__item:nth-child(6),
-  .footer__item:nth-child(7),
-  .footer__item:nth-child(8) {
-    margin-left: 0;
-  }
-
-  .footer__item:nth-child(7) {
-    margin: 0 1rem;
-  }
-}
 
 /* ========== FOR MEDIUM DEVICES min 767px ========== */
+@media screen and (min-width: 767px) {
+  .nav {
+    height: calc(var(--header-height) + 1rem);
+  }
+
+  .nav__toggle {
+    display: none;
+  }
+
+  .nav__list {
+    flex-direction: row;
+    column-gap: 3rem;
+  }
+
+  .home__img {
+    top: 65%;
+  }
+
+  .language {
+    background-color: var(--firt-color);
+    border-radius: 1.5rem;
+  }
+
+  .language a {
+    display: block;
+    padding: 0.3rem 0.8rem;
+    border-radius: 1.5rem;
+  }
+
+  .language:hover a {
+    color: #fff;
+  }
+}
 
 /* ========== FOR LARGE DEVICES min 992px ========== */
