@@ -52,11 +52,24 @@ const sr = ScrollReveal({
   // reset: true
 });
 
-// sr.reveal(`.home__title`);
-// sr.reveal(`.home__title, .new__container, .footer__container`);
-// sr.reveal(`.home__data`, { delay: 500 });
+// sr.reveal(`.home__img, .new__container, .footer__container`);
+sr.reveal(`.home__data, .award__title, .footer__sub`, { delay: 500 });
 // sr.reveal(`.giving__content, .gift__card`, { interval: 100 });
-// sr.reveal(`.celebrate__data, .message__form, .footer__img1`, {
-//   origin: "left",
-// });
-// sr.reveal(`.celebrate__img, .message__img, .footer__img2`, { origin: "right" });
+sr.reveal(
+  `.platform__title, .platform__item:nth-child(1), .platform__item:nth-child(3), .technical__title, .technical__item:nth-child(1), .technical__item:nth-child(3), .feature__left, .partnership__title`,
+  {
+    origin: "left",
+  }
+);
+sr.reveal(
+  `.platform__item:nth-child(2), .platform__item:nth-child(4), .technical__item:nth-child(2), .feature__right-title`,
+  {
+    origin: "right",
+  }
+);
+sr.reveal(
+  `.feature__right-item, .awards__item, .partnership__list, .footer__list`,
+  {
+    origin: "bottom",
+  }
+);

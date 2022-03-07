@@ -583,12 +583,6 @@ button {
   position: relative;
 }
 
-/* .footer__item:nth-child(1),
-.footer__item:nth-child(4),
-.footer__item:nth-child(7) {
-  margin-left: 0;
-} */
-
 .footer__item:hover {
   transform: scale(1.1);
 }
