@@ -52,22 +52,22 @@ const sr = ScrollReveal({
   // reset: true
 });
 
-sr.reveal(`.home__data, .award__title, .footer__sub`, { delay: 500 });
-sr.reveal(
-  `.platform__title, .platform__item:nth-child(1), .platform__item:nth-child(3), .technical__title, .technical__item:nth-child(1), .technical__item:nth-child(3), .feature__left, .partnership__title`,
-  {
-    origin: "left",
-  }
-);
-sr.reveal(
-  `.platform__item:nth-child(2), .platform__item:nth-child(4), .technical__item:nth-child(2), .feature__right-title`,
-  {
-    origin: "right",
-  }
-);
-sr.reveal(
-  `.feature__right-item, .awards__item, .partnership__list, .footer__list`,
-  {
-    origin: "bottom",
-  }
-);
+// sr.reveal(`.home__data, .award__title, .footer__sub`, { delay: 500 });
+// sr.reveal(
+//   `.platform__title, .platform__item:nth-child(1), .platform__item:nth-child(3), .technical__title, .technical__item:nth-child(1), .technical__item:nth-child(3), .feature__left, .partnership__title`,
+//   {
+//     origin: "left",
+//   }
+// );
+// sr.reveal(
+//   `.platform__item:nth-child(2), .platform__item:nth-child(4), .technical__item:nth-child(2), .feature__right-title`,
+//   {
+//     origin: "right",
+//   }
+// );
+// sr.reveal(
+//   `.feature__right-item, .awards__item, .partnership__list, .footer__list`,
+//   {
+//     origin: "bottom",
+//   }
+// );
