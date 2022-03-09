@@ -44,13 +44,13 @@ function scrollUp() {
 window.addEventListener("scroll", scrollUp);
 
 // ========== SCROLL REVEAL ==========
-const sr = ScrollReveal({
-  origin: "top",
-  distance: "60px",
-  duration: 2500,
-  delay: 400,
-  // reset: true
-});
+// const sr = ScrollReveal({
+//   origin: "top",
+//   distance: "60px",
+//   duration: 2500,
+//   delay: 400,
+//   // reset: true
+// });
 
 // sr.reveal(`.home__data, .award__title, .footer__sub`, { delay: 500 });
 // sr.reveal(
