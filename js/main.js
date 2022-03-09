@@ -44,30 +44,34 @@ function scrollUp() {
 window.addEventListener("scroll", scrollUp);
 
 // ========== SCROLL REVEAL ==========
-// const sr = ScrollReveal({
-//   origin: "top",
-//   distance: "60px",
-//   duration: 2500,
-//   delay: 400,
-//   // reset: true
-// });
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "60px",
+  duration: 2500,
+  delay: 400,
+  // reset: true
+});
 
-// sr.reveal(`.home__data, .award__title, .footer__sub`, { delay: 500 });
-// sr.reveal(
-//   `.platform__title, .platform__item:nth-child(1), .platform__item:nth-child(3), .technical__title, .technical__item:nth-child(1), .technical__item:nth-child(3), .feature__left, .partnership__title`,
-//   {
-//     origin: "left",
-//   }
-// );
-// sr.reveal(
-//   `.platform__item:nth-child(2), .platform__item:nth-child(4), .technical__item:nth-child(2), .feature__right-title`,
-//   {
-//     origin: "right",
-//   }
-// );
-// sr.reveal(
-//   `.feature__right-item, .awards__item, .partnership__list, .footer__list`,
-//   {
-//     origin: "bottom",
-//   }
-// );
+sr.reveal(`.home__data, .footer__sub`, { delay: 500 });
+sr.reveal(`.platform__item, .technical__item`, {
+  interval: 100,
+});
+sr.reveal(
+  `.platform__title, .technical__title, .feature__left, .award__title, .awards__item:nth-child(2), .awards__item:nth-child(4), .awards__item:nth-child(6)`,
+  {
+    origin: "left",
+  }
+);
+sr.reveal(
+  `.partnership__list, .feature__right-item:nth-child(1), .feature__right-item:nth-child(2), .feature__right-item:nth-child(3), .feature__right-item:nth-child(4), .footer__list`,
+  {
+    origin: "bottom",
+  }
+);
+
+sr.reveal(
+  `.feature__right-title, .awards__item:nth-child(3), .awards__item:nth-child(5), .awards__item:nth-child(7)`,
+  {
+    origin: "right",
+  }
+);

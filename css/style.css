@@ -378,13 +378,18 @@ button {
 
 .technical__item {
   background-color: var(--box-color);
-  padding: 1.5rem;
   margin-bottom: var(--mb-2-5);
   transition: 0.4s;
 }
 
-.technical__item:hover {
-  transform: scale(1.05);
+.technical__group {
+  transition: 0.4s;
+  background-color: var(--box-color);
+  padding: 1.5rem;
+}
+
+.technical__group:hover {
+  transform: scale(1.02);
 }
 
 .technical__item-title {
@@ -417,7 +422,6 @@ button {
   flex-direction: column;
   align-items: center;
   width: 80%;
-  /* margin-top: 1.5rem; */
   padding: 2rem;
 }
 
@@ -445,14 +449,11 @@ button {
   color: var(--text-color);
   padding: 8px 15px;
   background: var(--firt-color);
-  /* opacity: 0.9; */
   border-radius: 30px;
   transition: 0.3s;
 }
 
 .feature__left-link:hover {
-  /* opacity: 1; */
-  /* transform: scale(1.03); */
   color: #ffbe0b;
 }
 
@@ -473,8 +474,14 @@ button {
   transition: 0.4s;
 }
 
-.feature__right-item:hover {
-  transform: scale(1.03);
+.feature__right-group {
+  transition: 0.4s;
+  display: grid;
+  row-gap: 1rem;
+}
+
+.feature__right-group:hover {
+  transform: scale(1.02);
 }
 
 .feature__item-desc {
@@ -512,15 +519,20 @@ button {
 }
 
 .awards__item {
-  display: flex;
-  align-items: center;
   margin-bottom: var(--mb-1-5);
   max-width: 420px;
   transition: 0.4s;
 }
 
-.awards__item:hover {
-  transform: scale(1.03);
+.awards__group {
+  width: 100%;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.awards__group:hover {
+  transform: scale(1.02);
 }
 
 .awards__img {
@@ -644,55 +656,46 @@ button {
 }
 
 .footer__item-twitter:hover {
-  /* transform: scale(1.03); */
   background-color: #1da1f2;
   border: solid 1px #1da1f2;
 }
 
 .footer__item-medium:hover {
-  /* transform: scale(1.03); */
   background-color: #128c7e;
   border: solid 1px #128c7e;
 }
 
 .footer__item-gmail:hover {
-  /* transform: scale(1.03); */
   background-color: #db4437;
   border: solid 1px #db4437;
 }
 
 .footer__item-reddit:hover {
-  /* transform: scale(1.03); */
   background-color: #ff4500;
   border: solid 1px #ff4500;
 }
 
 .footer__item-tele:hover {
-  /* transform: scale(1.03); */
   background-color: #0088cc;
   border: solid 1px #0088cc;
 }
 
 .footer__item-snap:hover {
-  /* transform: scale(1.03); */
   background-color: #fffc00;
   border: solid 1px #fffc00;
 }
 
 .footer__item-snap:hover {
-  /* transform: scale(1.03); */
   background-color: #fffc00;
   border: solid 1px #fffc00;
 }
 
 .footer__item-baidu:hover {
-  /* transform: scale(1.03); */
   background-color: #2529d8;
   border: solid 1px #2529d8;
 }
 
 .footer__item-youtube:hover {
-  /* transform: scale(1.03); */
   background-color: #ff0000;
   border: solid 1px #ff0000;
 }
@@ -776,10 +779,6 @@ button {
     flex-direction: row;
     column-gap: 3rem;
   }
-
-  /* .home__button {
-    top: 60%;
-  } */
 
   .home__title {
     line-height: 3rem;
