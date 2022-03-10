@@ -3,7 +3,7 @@
 
 /* ========== VARIABLE CSS ========== */
 :root {
-  --header-height: 3.5rem;
+  --header-height: 4rem;
 
   /* Colors */
   --firt-color: #f04557;
@@ -76,7 +76,6 @@ input {
 }
 
 body {
-  /* margin: var(--header-height) 0 0 0; */
   background-color: var(--body-color);
   font-size: var(--h3-font-size);
   color: var(--text-color);
@@ -144,7 +143,6 @@ button {
 /* ========== HEADER ========== */
 .header {
   width: 100%;
-  /* background-color: transparent; */
   position: fixed;
   top: 0;
   left: 0;
@@ -157,6 +155,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: 0.4s;
 }
 
 .nav__logo {
@@ -763,14 +762,8 @@ button {
   }
 }
 
-/* ========== FOR MEDIUM DEVICES min 576px ========== */
-
 /* ========== FOR MEDIUM DEVICES min 767px ========== */
 @media screen and (min-width: 767px) {
-  .nav {
-    height: calc(var(--header-height) + 1rem);
-  }
-
   .nav__toggle {
     display: none;
   }
@@ -805,6 +798,9 @@ button {
   .platform__item:nth-child(3) {
     margin-top: 2.5rem;
   }
+  .nav-header {
+    height: calc(var(--header-height) - 0.5rem);
+  }
 }
 
 /* ========== FOR LARGE DEVICES min 992px ========== */
@@ -812,6 +808,14 @@ button {
   .container {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .nav-header {
+    height: calc(var(--header-height) - 0.5rem);
+  }
+
+  .nav__item:last-child {
+    margin-left: 300px;
   }
 
   .home__title {

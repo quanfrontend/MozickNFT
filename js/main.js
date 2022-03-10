@@ -30,8 +30,14 @@ navLink.forEach((n) => n.addEventListener("click", linkAction));
 // ========== CHANGE BACKGROUND HEADER ==========
 function scrollheader() {
   const header = document.querySelector("#header");
-  if (this.scrollY >= 50) header.classList.add("scroll-header");
-  else header.classList.remove("scroll-header");
+  const nav = document.querySelector(".nav");
+  if (this.scrollY >= 50) {
+    header.classList.add("scroll-header");
+    nav.classList.add("nav-header");
+  } else {
+    header.classList.remove("scroll-header");
+    nav.classList.remove("nav-header");
+  }
 }
 window.addEventListener("scroll", scrollheader);
 
