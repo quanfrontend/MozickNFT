@@ -405,6 +405,18 @@ button {
   font-family: var(--desc-font);
 }
 
+/* Video */
+.video {
+  width: 100%;
+  padding: 3rem 0;
+  background-image: url(../img/banner/banner.jpg);
+}
+
+.video__media {
+  width: 100%;
+  height: auto;
+}
+
 /* Feature */
 .feature {
   margin-bottom: var(--mb-2-5);
